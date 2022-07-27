@@ -12,7 +12,7 @@ import {
 	TextField, 
 	Typography 
 } from '@mui/material';
-import { MdOutlineExpandLess } from 'react-icons/md'
+import { MdOutlineExpandMore } from 'react-icons/md'
 
 
 const App = (props: any) => {
@@ -81,7 +81,7 @@ const App = (props: any) => {
 							<>
 								<Accordion key={user.id}>
 									<AccordionSummary
-										expandIcon={<MdOutlineExpandLess />}
+										expandIcon={<MdOutlineExpandMore />}
 									>
 										<Typography sx={{ fontWeight: 'bold', fontSize: '20px' }}>
 											{`${user.name} (${user.username})`}
