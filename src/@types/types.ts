@@ -25,3 +25,17 @@ export interface User {
   address: UserAddress;
 	company: UserCompany;
 }
+
+export interface Task {
+  id: number;
+  userId: number;
+  title: string;
+  completed: boolean;
+}
+
+export interface Post {
+  id: number;
+  userId: number;
+  title: string;
+  body: string;
+}
