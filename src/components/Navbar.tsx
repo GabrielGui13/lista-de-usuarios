@@ -1,5 +1,5 @@
 import { Box, Typography, Link } from "@mui/material"
-import { IoMdHome } from 'react-icons/io'
+import { FaUser } from 'react-icons/fa'
 
 export const Navbar = (props: any) => {
 	return (
@@ -29,7 +29,7 @@ export const Navbar = (props: any) => {
 					gap: '10px'
 				}}
 			>
-				<IoMdHome style={{ transform: 'scale(2)' }} />
+				<FaUser style={{ transform: 'scale(1.7)' }} />
 				<Box>
 					<Typography sx={{ fontWeight: 'bold' }}>Lista de usuários</Typography>
 				</Box>
