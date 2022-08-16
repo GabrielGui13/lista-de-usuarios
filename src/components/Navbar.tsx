@@ -1,7 +1,12 @@
 import { Box, Typography, Link } from "@mui/material"
 import { FaUser } from 'react-icons/fa'
+import { useAuth } from "../hooks/useAuth"
 
 export const Navbar = (props: any) => {
+	const { user } = useAuth()
+
+	console.log(user)
+
 	return (
 		<Box
 			sx={{
