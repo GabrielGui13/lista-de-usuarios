@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import { Navbar } from "../components/Navbar";
 import { AuthUser } from "../context/AuthContext";
-import { AiFillGithub } from 'react-icons/ai'
+import { BiLogIn } from 'react-icons/bi'
 import { useAuth } from "../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
 
@@ -51,14 +51,14 @@ export const Login = (props: any) => {
 						<TextField
 							fullWidth
 							sx={{ outlineColor: 'black' }}
-							label='Github'
-							placeholder='Insira seu username do github...'
+							label='Nome'
+							placeholder='Insira seu nome...'
 							value={loginData.name}
 							onChange={(e) => setLoginData(prev => ({ ...prev, name: e.target.value }))}
 							InputProps={{
 								startAdornment: (
 									<InputAdornment position="start">
-										<AiFillGithub />
+										<BiLogIn />
 									</InputAdornment>
 								),
 							}}

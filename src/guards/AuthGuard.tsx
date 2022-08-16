@@ -7,7 +7,7 @@ export const AuthGuard = (props: PropsWithChildren) => {
 	const navigate = useNavigate()
 
 	if (!isAuthenticated) {
-		isLoading ? console.log('Loading...') : navigate('/') 
+		isLoading ? console.log('Loading...') : navigate('/')
 	}
 
 	return (

@@ -37,6 +37,12 @@ export const AuthContextProvider = (props: PropsWithChildren) => {
 				isAuthenticated: true,
 				isLoading: false
 			})
+		} else {
+			setState({
+				user: null,
+				isAuthenticated: false,
+				isLoading: false
+			})
 		}
 	}, [])
 
